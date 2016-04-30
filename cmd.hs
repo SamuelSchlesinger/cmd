@@ -14,9 +14,14 @@ features = [
             Command "write" writef "<filename> {<stuff-to-write>}",
             Command "read" readf "<filename>",
             Command "intersperse" interspersef "<filename> <spacer> {<stuff-to-write>}",
-            Command "copy" copyf "<filename> <newfilename>"
+            Command "copy" copyf "<filename> <newfilename>",
+            Command "cp" copyf "<filename> <newfilename>",
+            Command "usage" usagef ""
            ] 
 
+-- | Prints the usage information
+usagef :: [String] -> IO ()
+usagef _ = putStr $ usage features
 
 -- | Copies a file
 copyf :: [String] -> IO ()

@@ -1,0 +1,8 @@
+I really like this piece of code, and I feel like this could be a useful
+starting point to make the occasional command line tool. The only thing
+you have to modify is cmd.hs below the main definition and the features
+list.
+
+That being said, I'd like to work on documenting, clocking, and improving
+the efficiency of these operations, as I'd learn about the capabilities of
+Haskell's IO system.
