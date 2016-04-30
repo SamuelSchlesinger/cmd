@@ -25,5 +25,3 @@ run name features args = cmd args where
                              cmd = case getFeature name features of
                                         Just (Command _ cmd _) -> cmd
                                         Nothing -> (\_ -> putStr $ usage features)
-
-
